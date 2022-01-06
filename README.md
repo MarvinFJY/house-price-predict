@@ -69,7 +69,7 @@ Based on our model, our company looking to flip undervalued houses and sell them
 
 <u>Applicability of our model outside of Ames, Iowa<u/>
     
-![](/pictures/coefficient.png)
+![](/pictures/ames_trend.png)
 ![](/pictures/general_trend.png)
 
 The city of Ames do display trends that are in line with the majority of the cities. One example is the trend of housing prices even during the subprime mortgage crisis of 2008. However, one point to keep in mind that the last date recorded was in 2010 and there are not enough recent data to determine that Ames saleprice trend is still the same as the general US cities trend due to various factors such as housing policy changes, recession economy and COVID'19. Hence, the team do feel that this model may be applicable to a certain extent when using on other cities in the United States 
@@ -124,7 +124,7 @@ In order to revise the model to make it more universal, the simplest say would b
 |HeatingQC|Heating quality and condition|
 |CentralAir|Central air conditioning|
 |Electrical|Electrical system|
-|1stFlrSF|First Floor square feet|   
+|1stFlrSF|First Floor square feet|
 |2ndFlrSF|Second floor square feet|
 |LowQualFinSF|Low quality finished square feet (all floors)|
 |GrLivArea|Above grade (ground) living area square feet|
