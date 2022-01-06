@@ -22,7 +22,7 @@ Management would also like this new model to address certain business concerns t
 
 For our prediction model, we had used lasso regression as it had the best predictive performance (lowest RMSE) on housing price in Ames, Iowa, USA. The production model had a final total of 28 independent variables after applying feature selection, feature engineering and automated feature selection (namely: Recusive Feature Elimination and Lasso Regression). Although decreasing to 28 features, there had been a slight tradeoff between interpretability and accuracy of our prediction model. However, the benefits outweigh the costs and we will accept the tradeoffs.
 
-![](../pictures/coefficient.png)
+![](/pictures/coefficient.png)
 
 The coefficients of our production model (lasso regression model) had also indicated that **area** and **quality** of the house in general seems to be the biggest contributor to value of housing. Hence, a per unit increase in area of the house would cause a much greater percentage increase in the house price compare to other features. This is the same for quality / condition of the house, in which the better the quality / material used, the house price would increase to a greater extent as compared to other features.
 
