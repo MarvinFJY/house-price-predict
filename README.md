@@ -43,6 +43,7 @@ From this, we can see that our independent variable now has a **multiplicative r
 Example: 
 - For every 1-unit increase in `gr_liv_area`, our target variable `saleprice` will increase by 14%
 
+
 ![](/pictures/coefficient.png)
 
 The coefficients of our production model (lasso regression model) had also indicated that **area** and **quality** of the house in general seems to be the biggest contributor to value of housing. Hence, a per unit increase in area of the house would cause a much greater percentage increase in the house price compare to other features. This is the same for quality / condition of the house, in which the better the quality / material used, the house price would increase to a greater extent as compared to other features.
@@ -156,4 +157,5 @@ In order to revise the model to make it more universal, the simplest say would b
 |MiscVal|Dollar Value of miscellaneous feature|
 |MoSold|Month Sold|
 |YrSold|Year Sold|
-|SaleType|Type of sale|  
+|SaleType|Type of sale|
+
