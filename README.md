@@ -81,6 +81,7 @@ In order to revise the model to make it more universal, the simplest say would b
 ---
 
 |Feature|Description|
+|---|---|
 |SalePrice|The property's sale price in dollars|
 |MSSubClass|The building class|
 |MSZoning|Identifies the general zoning classification of the sale|
