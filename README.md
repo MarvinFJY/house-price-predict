@@ -23,20 +23,20 @@ Management would also like this new model to address certain business concerns t
 
 For our prediction model, we had used lasso regression as it had the best predictive performance (lowest RMSE) on housing price in Ames, Iowa, USA. The production model had a final total of 28 independent variables after applying feature selection, feature engineering and automated feature selection (namely: Recusive Feature Elimination and Lasso Regression). Although decreasing to 28 features, there had been a slight tradeoff between interpretability and accuracy of our prediction model. However, the benefits outweigh the costs and we will accept the tradeoffs.
 
-<u>Interpretation of Coefficients</u>
+**Interpretation of Coefficients**
 
 As we have log-transformed our dependent variable, y, we would then have to interpret our coefficents differently as the linear regression equation then becomes:
 
-$$log(y) = \beta_0 + \beta_1 x_1$$
+𝑙𝑜𝑔(𝑦)=𝛽0+𝛽1𝑥1
 
 The rule<sup>[(source)](https://data.library.virginia.edu/interpreting-log-transformations-in-a-linear-model/)</sup> for interpretation when only the dependent variable is log-transformed is to expnentiate the coefficient, subtract one from this number, and multiply by 100. This gives the percent increase (or decrease) in the response for every 1-unit increase in the independent variable.
 
 To see why we exponentiate:
-$$exp(log(y)) = exp(\beta_0 + \beta_1 x_1)$$
+𝑒𝑥𝑝(𝑙𝑜𝑔(𝑦))=𝑒𝑥𝑝(𝛽0+𝛽1𝑥1)
 
-$$y = exp(\beta_0 + \beta_1)$$
+𝑦=𝑒𝑥𝑝(𝛽0+𝛽1𝑥1)
 
-$$y = exp(\beta_0) exp(\beta_1)$$
+𝑦=𝑒𝑥𝑝(𝛽0)𝑒𝑥𝑝(𝛽1𝑥1)
 
 From this, we can see that our independent variable now has a **multiplicative relationship** with our dependent variable instead of the usual **additive relationship**. Hence, the need to express the effect of a 1-unit change in x on y as a percent!
 
@@ -48,7 +48,7 @@ Example:
 
 The coefficients of our production model (lasso regression model) had also indicated that **area** and **quality** of the house in general seems to be the biggest contributor to value of housing. Hence, a per unit increase in area of the house would cause a much greater percentage increase in the house price compare to other features. This is the same for quality / condition of the house, in which the better the quality / material used, the house price would increase to a greater extent as compared to other features.
 
-<u>Other limitations faced when creating production model</u>
+**Other limitations faced when creating production model**
 
 Having domain knowledge is important when deciding whether to convert nominal catergories to ordinal, especially when looking at materials. For example, for fence, it is difficult to determine the rank of privacy, material and no fence or if one hot encoding it should be a fairer way. Hence, domain knowledge here was important in which we would know if house buyers would deem which value as more valuable to them.
 
@@ -67,7 +67,7 @@ Based on our model, our company looking to flip undervalued houses and sell them
 - Add a fireplace
 - Invest in housing specifically from Stone Brook, Northridge Heights and Northridge
 
-<u>Applicability of our model outside of Ames, Iowa<u/>
+**Applicability of our model outside of Ames, Iowa**
     
 ![](/pictures/ames_trend.png)
 ![](/pictures/general_trend.png)
